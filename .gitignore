@@ -1,0 +1,10 @@
+api-gateway/node_modules/
+api-gateway/dist/
+
+security-microservice/node_modules/
+security-microservice/dist/
+
+forecast-microservice/node_modules/
+forecast-microservice/dist/
+
+forecast-ui/node_modules/
