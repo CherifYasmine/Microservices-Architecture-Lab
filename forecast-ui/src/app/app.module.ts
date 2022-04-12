@@ -8,13 +8,17 @@ import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ForecastComponent } from './forecast/forecast.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     HomeComponent,
-    ForecastComponent
+    ForecastComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,9 @@ import { ForecastComponent } from './forecast/forecast.component';
     NgxEchartsModule.forRoot({
       echarts
     }),
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

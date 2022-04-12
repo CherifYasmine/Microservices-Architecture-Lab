@@ -1,0 +1,169 @@
+.all{
+    margin-left:400px;
+    margin-right:500px;
+    margin-top: 150px;
+  }
+  .in{
+    border-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    font-family: revert;
+    background-color:black ;
+  }
+  .booking-form h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+  .btn{
+      /* float:right; */
+      margin-top: 20px;
+      height:50px;
+      width:150px;
+      border-radius: 20px;
+      border-width: 0;
+      background-color:black;
+      margin-left:250px;
+      color:white;
+  }
+  a:hover{
+    color:black ;
+  }
+  .wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: 20px;
+    width:500px;
+  }
+  
+  .input100 {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.59);
+  
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+  }
+  /*------------------------------------------------------------------
+  [ Focus ]*/
+  .focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: #dfa974;
+  }
+  
+  .txt1 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #999999;
+  }
+  
+  .txt2 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666666;
+  }
+  
+  /*//////////////////////////////////////////////////////////////////*/
+  /*---------------------------------------------*/
+  input {
+    outline: none;
+    border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+  textarea:focus,
+  input:focus {
+    border-color: transparent !important;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  input:focus:-moz-placeholder {
+    color: transparent;
+  }
+  input:focus::-moz-placeholder {
+    color: transparent;
+  }
+  input:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  textarea:focus:-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #999999;
+  }
+  input:-moz-placeholder {
+    color: #999999;
+  }
+  input::-moz-placeholder {
+    color: #999999;
+  }
+  input:-ms-input-placeholder {
+    color: #999999;
+  }
+  
+  textarea::-webkit-input-placeholder {
+    color: #999999;
+  }
+  textarea:-moz-placeholder {
+    color: #999999;
+  }
+  textarea::-moz-placeholder {
+    color: #999999;
+  }
+  textarea:-ms-input-placeholder {
+    color: #999999;
+  }
+  
+  /*---------------------------------------------*/
+  .p-t-12 {
+    padding-top: 12px;
+  }
+  .p-t-100 {
+    padding-top: 70px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+
+  .error{
+    color: red;
+    padding-left: 15px;
+    font-size: 11px;
+  
+  }
