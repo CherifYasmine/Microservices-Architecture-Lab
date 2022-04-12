@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Products</h1>
+    <br>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#Reference</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Store Name</th>
+            <th scope="col">Forecast</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{product._id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.storeName}}</td>
+            <td><button class="btn btn-secondary" (click)="redirectForecast(product)">Forecast</button></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+</div>

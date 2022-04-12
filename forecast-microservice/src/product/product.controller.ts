@@ -32,4 +32,8 @@ export class ProductController {
   remove(@Param('id') id: string): Promise<Product>  {
     return this.productService.remove(id);
   }
+  @Get('forecast')
+  forecast() {
+    return this.productService.forecast();
+  }
 }
