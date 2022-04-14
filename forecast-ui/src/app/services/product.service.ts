@@ -6,12 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  productsUrl = 'http://localhost:3000/product';
+  productsUrl = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<any>{
-    return this.http.get<any[]>(this.productsUrl);
+    return this.http.get<any[]>(`${this.productsUrl}/forecast/all-products`);
   }
   async forecast(){
     const results = Array.from({length: 12}).map<Number> (
