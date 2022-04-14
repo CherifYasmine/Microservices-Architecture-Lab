@@ -1,10 +1,13 @@
 api-gateway/node_modules/
 api-gateway/dist/
+api-gateway/.env
 
 security-microservice/node_modules/
 security-microservice/dist/
+security-microservice/.env
 
 forecast-microservice/node_modules/
 forecast-microservice/dist/
+forecast-microservice/.env
 
 forecast-ui/node_modules/

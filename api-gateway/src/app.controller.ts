@@ -12,5 +12,9 @@ export class AppController {
   forecast(@Res() response) {
     return this.appService.forecast(response);
   }
+  @Get('/forecast/hello')
+  auth(@Res() response) {
+    return this.appService.auth(response);
+  }
  
 }

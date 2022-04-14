@@ -13,6 +13,14 @@ import { AppService } from "./app.service";
           host: "127.0.0.1",
           port: 8888
         }
+      },
+      {
+        name: "SECURITY_MICROSERVICE",
+        transport: Transport.TCP,
+        options: {
+          host: "127.0.0.1",
+          port: 8889
+        }
       }
     ])
   ],
