@@ -10,3 +10,4 @@ The application is composed:
 - **Planning Microservice:** responsible for The creation of plans based on the generated forecast.
 - **API Gateway:** Orchestrates requests from the client. All requests should pass through it.
 
+![Architecture](architecture.png)
