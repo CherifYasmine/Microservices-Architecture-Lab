@@ -11,3 +11,6 @@ forecast-microservice/dist/
 forecast-microservice/.env
 
 forecast-ui/node_modules/
+
+*/.env
+*/.vscode
