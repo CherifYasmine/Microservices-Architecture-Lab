@@ -15,9 +15,8 @@ The application is composed:
 ### Execution
 - **Authentication:**
 <p align="center">
-  <img alt="Light" src="https://user-images.githubusercontent.com/62222721/163636139-7a2ab009-3f41-48b2-ad9a-7d8595a02b9f.png" width="48%" height="400px">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://user-images.githubusercontent.com/62222721/163636143-78334156-cc65-406a-bb8d-d11607d490d7.png" width="48%" height="400px">
+  <img src="https://user-images.githubusercontent.com/62222721/163636139-7a2ab009-3f41-48b2-ad9a-7d8595a02b9f.png" width="48%" height="400px">
+  <img src="https://user-images.githubusercontent.com/62222721/163636143-78334156-cc65-406a-bb8d-d11607d490d7.png" width="48%" height="400px">
 </p>
 
 - **Forecast:** 
