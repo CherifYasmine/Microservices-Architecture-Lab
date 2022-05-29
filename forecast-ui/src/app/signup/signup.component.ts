@@ -32,6 +32,7 @@ export class SignupComponent implements OnInit {
       username: this.loginForm.value.username,
       password: this.loginForm.value.password
     };
+    this.router.navigate([`/login/`])
 
   }
 
