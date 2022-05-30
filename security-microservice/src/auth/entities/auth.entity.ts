@@ -1,1 +1,5 @@
-export class Auth {}
+export class Auth {
+    id?: string;
+    name: string;
+    email: string;
+}

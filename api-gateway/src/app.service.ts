@@ -16,7 +16,15 @@ export class AppService {
             .subscribe((data) => response.status(HttpStatus.OK).send(data))
   }
   async auth(response: Response) {
-    return this.securityMicroservice.send('hello',{})
+    return this.securityMicroservice.send('login',{})
+            .subscribe((data) => response.status(HttpStatus.OK).send(data))
+  }
+  async login(name:string, response: Response) {
+    return this.securityMicroservice.send('signin',name)
+            .subscribe((data) => response.status(HttpStatus.OK).send(data))
+  }
+  async register(credentials:string, response: Response) {
+    return this.securityMicroservice.send('register',credentials)
             .subscribe((data) => response.status(HttpStatus.OK).send(data))
   }
 }

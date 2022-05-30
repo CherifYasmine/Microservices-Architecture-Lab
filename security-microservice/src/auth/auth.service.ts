@@ -1,19 +1,25 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
 import { CreateAuthDto } from './dto/create-auth.dto';
 import { UpdateAuthDto } from './dto/update-auth.dto';
+import { Model } from 'mongoose';
+import { Auth } from './entities/auth.entity';
 
 @Injectable()
 export class AuthService {
-  create(createAuthDto: CreateAuthDto) {
-    return 'This action adds a new auth';
+  constructor(
+    @InjectModel('user') private readonly userModel: Model<Auth>){}
+  async create(createAuthDto: CreateAuthDto) {
+    const newProduct = new this.userModel(createAuthDto);
+    return await newProduct.save();
   }
 
   findAll() {
     return `This action returns all auth`;
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} auth`;
+  async login(name: string) {
+    return await this.userModel.findOne({ name: name })
   }
 
   update(id: number, updateAuthDto: UpdateAuthDto) {
