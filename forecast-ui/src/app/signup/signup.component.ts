@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private router: Router) { }
+  constructor(private productService:ProductService,private fb: FormBuilder, private http: HttpClient, private router: Router) { }
 
   get form() {
     return this.loginForm.controls;
@@ -29,9 +30,11 @@ export class SignupComponent implements OnInit {
 
   onSubmit(): void {
     const data = {
+      email: this.loginForm.value.email,
       username: this.loginForm.value.username,
       password: this.loginForm.value.password
     };
+    this.productService.register(data)
     this.router.navigate([`/login/`])
 
   }

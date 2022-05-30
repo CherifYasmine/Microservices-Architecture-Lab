@@ -24,5 +24,11 @@ export class ProductService {
   // forecast(){
   //   return this.http.get<number[]>(`${this.productsUrl}/forecast`)
   // }
+  login(name:string): Observable<any>{
+    return this.http.post<any[]>(`${this.productsUrl}/auth/login`, name);
+  }
+  register(crdentials:any): Observable<any>{
+    return this.http.post<any[]>(`${this.productsUrl}/auth/register`, crdentials);
+  }
   
 }

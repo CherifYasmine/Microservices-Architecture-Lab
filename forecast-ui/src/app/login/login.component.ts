@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import {Router} from '@angular/router';
 export class LoginComponent implements OnInit {
 
 
-  constructor(private fb: FormBuilder, private http: HttpClient,
+  constructor(private productService:ProductService,private fb: FormBuilder, private http: HttpClient,
               private router: Router) {
   }
 
@@ -34,8 +35,8 @@ export class LoginComponent implements OnInit {
       username: this.loginForm.value.username,
       password: this.loginForm.value.password
     };
-    this.router.navigate([`/products/`])
-
+    if(this.productService.login(data.username)!=null)
+      this.router.navigate([`/products/`])
   }
   
 }
